@@ -1,3 +1,5 @@
+*,
+*::before,
 *::after {
     margin: 0;
     padding: 0;
@@ -13,46 +15,47 @@ button {
     /* Primary */
     --dark-cyan: hsl(185, 75%, 39%);
     --very-dark-desaturated-blue: hsl(229, 23%, 23%);
-    --dark-grayish-blue: hsla(227, 10%, 46%, 0.80);
+    --dark-grayish-blue: hsla(227, 10%, 46%, 0.8);
     /* Neutral */
-    --dark-gray: hsl(0, 0%, 59%);
+    --dark-gray: hsl(0, 5%, 88%);
 }
 
 html {
-    font-family: Kumbh Sans;
+    font-family: Kumbh Sans, sans-serif;
 }
 
-/* Utilities */
+/* Typography Styles */
 
 .card__name,
-.card__status-number {
+.card__stats-number {
     font-weight: 750;
     color: var(--very-dark-desaturated-blue);
 }
 
 .card__age,
 .card__country {
-    font-weight: 550;
+    font-weight: 505;
     color: var(--dark-grayish-blue);
 }
 
-.card__status-text {
-    font-weight: 550;
-    font-size: 12px;
-    color: var(--dark-grayish-blue)
+.card__stats-text {
+    font-weight: 498;
+    font-size: 0.65625rem;
+    letter-spacing: 0.0875rem;
+    color: var(--dark-grayish-blue);
 }
 
 .card__name,
 .card__age,
-.card__status-number {
-    font-size: 18px;
+.card__stats-number {
+    font-size: 1.125rem;
 }
 
 .card__country {
-    font-size: 14px;
+    font-size: 0.90625rem;
 }
 
-/* Styles */
+/* General CSS */
 
 body {
     height: 100vh;
@@ -74,18 +77,18 @@ body {
 }
 
 .card__profile-image {
-    width: 110px;
-    height: 110px;
+    width: 105px;
+    height: 105px;
     position: absolute;
     border-radius: 100px;
     border: 5px solid #ffffff;
-    top: 24%;
+    top: 26%;
     left: 50%;
     transform: translateX(-50%);
 }
 
 .card__profile-details {
-    height: 100px;
+    height: 140px;
     padding-top: 40px;
     display: flex;
     flex-direction: column;
@@ -135,16 +138,8 @@ body {
 
 /*
 - Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
-- Weights: 400, 700
-- Font size (name and stats): 18px
+- Weights: 400, 700. Note: This is not really accurate, I had to tweak it.
+- Font size (name and stats): 18px. Note: This is not really accurate, I had to tweak it.
 - Mobile: 375px
 - Desktop: 1440px
-*/
-
-/* Necesito recordar */
-/*
-- Emmets
-- Favicon
-<link rel="icon" href="images/favicon-32x32.png" type="image/png">
-- BEM
 */
