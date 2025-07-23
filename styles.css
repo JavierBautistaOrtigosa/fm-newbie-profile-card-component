@@ -1,0 +1,150 @@
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    all: unset;
+    outline: revert;
+}
+
+:root {
+    /* Primary */
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsla(227, 10%, 46%, 0.80);
+    /* Neutral */
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+html {
+    font-family: Kumbh Sans;
+}
+
+/* Utilities */
+
+.card__name,
+.card__status-number {
+    font-weight: 750;
+    color: var(--very-dark-desaturated-blue);
+}
+
+.card__age,
+.card__country {
+    font-weight: 550;
+    color: var(--dark-grayish-blue);
+}
+
+.card__status-text {
+    font-weight: 550;
+    font-size: 12px;
+    color: var(--dark-grayish-blue)
+}
+
+.card__name,
+.card__age,
+.card__status-number {
+    font-size: 18px;
+}
+
+.card__country {
+    font-size: 14px;
+}
+
+/* Styles */
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark-cyan);
+}
+
+.card {
+    position: relative;
+    min-width: 380px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    overflow: hidden;
+    background-color: #ffffff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.card__profile-image {
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    border-radius: 100px;
+    border: 5px solid #ffffff;
+    top: 24%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.card__profile-details {
+    height: 100px;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.card__profile-details-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.card__profile {
+    height: 140px;
+    width: 140px;
+    border-radius: 100px;
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.card__user {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.card__stats {
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-top: 0.5px solid var(--dark-gray);
+    gap: 64px;
+}
+
+.card__stats-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+/*
+- Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
+- Weights: 400, 700
+- Font size (name and stats): 18px
+- Mobile: 375px
+- Desktop: 1440px
+*/
+
+/* Necesito recordar */
+/*
+- Emmets
+- Favicon
+<link rel="icon" href="images/favicon-32x32.png" type="image/png">
+- BEM
+*/
